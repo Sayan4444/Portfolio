@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script defer src="index.js"></script>
+  <title>My Project</title>
+</head>
+
+<body class="bg-bodyColor text-white">
+
+  <!-- ------------------------------------------------------------- -->
+  <!-- Navbar -->
+  <!-- ------------------------------------------------------------- -->
+
+
+  <nav class="fixed w-screen nav-bg transition-all duration-500 z-10">
+    <a href="https://www.linkedin.com/feed/" target="_blank" class="font-bold text-lg"><span>Sayan</span> Banerjee</a>
+    <ul
+      class="flex bg-boxColor flex-col space-y-8 top-0 px-20 py-20 h-screen absolute items-center side-menu transition-all duration-300 z-10 md:flex-row md:space-x-6 md:right-20 md:top-3 md:space-y-0 md:px-0 md:py-0 md:h-auto md:items-start md:bg-transparent">
+      <li><a href="#header" class="hover:text-mainColor transition-all duration-500">Home</a></li>
+      <li><a href="#about" class="hover:text-mainColor transition-all duration-500">About</a></li>
+      <li><a href="#services" class="hover:text-mainColor transition-all duration-500">Services</a></li>
+      <li><a href="#portfolio" class="hover:text-mainColor transition-all duration-500">Portfolio</a></li>
+      <li><a href="#reviews" class="hover:text-mainColor transition-all duration-500">Reviews</a></li>
+      <li><a href="#contact" class="hover:text-mainColor transition-all duration-500">Contact</a></li>
+    </ul>
+
+    <div class="cursor-pointer text-2xl absolute top-3 right-6 z-20 md:hidden"><i
+        class="fa-solid fa-bars side-menu-btn"></i></div>
+  </nav>
+
+
+
+
+  <!-- ------------------------------------------------------------- -->
+  <!-- Header -->
+  <!-- ------------------------------------------------------------- -->
+
+
+
+  <section id="header">
+
+    <div class="flex flex-col">
+
+      <img src="images/image.jpg" alt="" class="w-60 mx-auto pt-10 cursor-pointer lg:mt-10 clk"
+        style="border-radius: 50%">
+
+
+      <div class="mx-auto text-mainColor py-5">--Hello--</div>
+      <div class="text-center text-4xl font-black tracking-tight -z-10 lg:text-6xl">I'm <span class="auto-type"></span>
+      </div>
+
+      <p class="text-center text-sm tracking-tight pt-5 lg:px-28 lg:text-base">I am a 1st year student at NIT Durgapur
+        studying CS &
+        a
+        <span>web
+          developer</span> with a
+        strong
+        passion for
+        building <span>web application</span> &
+        mobile application.
+      </p>
+
+      <p class="text-center text-sm">Here's a bit <span>about me</span> </p>
+
+    </div>
+
+    <div class="flex flex-row justify-center space-x-4 py-4">
+      <a href="https://www.facebook.com/profile.php?id=100027520621727" target="_blank"><i
+          class="fa-brands fa-facebook-f glow-icon px-4"></i></a>
+      <a href="https://www.instagram.com/sayan_banerjee____/" target="_blank"><i
+          class="fa-brands fa-instagram glow-icon"></i></a>
+      <a href="https://www.linkedin.com/in/sayan-banerjee-77603a23b/" target="_blank"><i
+          class="fa-brands fa-linkedin-in glow-icon"></i></a>
+      <a href="https://github.com/Sayan4444" target="_blank"><i class="fa-brands fa-github glow-icon "></i></a>
+    </div>
+  </section>
+
+
+  <!-- ------------------------------------------------------------- -->
+  <!-- ABOUT -->
+  <!-- ------------------------------------------------------------- -->
+
+
+  <section id="about" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+    <h1 class="text-center text-6xl text-headingColor font-bold my-10">ABOUT</h1>
+    <div class="lg:flex lg:flex-row">
+      <div class="w-full">
+        <span class="text-sm">ABOUT ME</span>
+        <p class="text-3xl font-semibold my-3 lg:lleading-relaxed	">Web Developer & <br>App Developer & <br> TA for DSA
+        </p>
+        <div class="my-10">
+          <a href="#portfolio" class="glow-btn">My Portfolio <i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+
+      <div class="">
+        <p class="text-sm lg:text-lg">I am an undergrand student at NIT Durgapur Computer Science Engeneering 22-26</p>
+
+        <p class="my-4 text-sm lg:text-lg"><span>WBJEE RANK:</span> 1276, <br>
+          <span>JEE Main:</span> 99 percentile, <br>
+          <span>ISC:</span> 92.75 percentage, <br>
+
+        <p class="text-sm lg:text-lg">Get your project booked with <a href="#contact"
+            class="text-mainColor hover:text-yellow-400 transition-all duration-500">contact
+            button</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ------------------------------------------------------------- -->
+  <!-- SERVICES -->
+  <!-- ------------------------------------------------------------- -->
+
+  <section id="services" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+    <h1 class="text-center text-6xl text-headingColor font-bold my-10">SERVICES</h1>
+
+    <div class="grid grid-cols-2 gap-8 md:grid-cols-3">
+
+      <div class="flex flex-col items-center px-6 service-box hover:scale-105 transition-all duration-300">
+        <i class="fa-solid fa-code border-dashed border-2 rounded-full p-3"></i>
+        <h2 class="text-mainColor text-lg tracking-tighter my-2 text-center">Web Development</h2>
+        <p class="text-center mb-2 text-sm">Design and simplicity are the core for a any working website. Easily get a
+          stunning SEO friendly website created by us all by a simple click.</p>
+      </div>
+
+      <div class="flex flex-col items-center px-6 service-box hover:scale-105 transition-all duration-300">
+        <i class="fa-solid fa-code border-dashed border-2 rounded-full p-3"></i>
+        <h2 class="text-mainColor text-lg tracking-wider my-2 text-center ">App Development</h2>
+        <p class="text-center mb-2 text-sm">Using solid expertise in mobile apps development, our team will help you
+          create practical and seamless experiences on any device and get the best of mobile technology for your
+          business.
+        </p>
+      </div>
+
+      <div class="flex flex-col items-center px-6 service-box hover:scale-105 transition-all duration-300">
+        <i class="fa-solid fa-code border-dashed border-2 rounded-full p-3"></i>
+        <h2 class="text-mainColor text-lg tracking-tighter my-2 text-center">Teaching Assisstant for DSA</h2>
+        <p class="text-center mb-2 text-sm">Can work as a teaching assistant for part time for any of the fields in
+          Computer Science specially in Data Structures and Algorithm.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------- -->
+  <!-- SERVICES -->
+  <!-- ------------------------------------------------------------- -->
+
+  <section id="portfolio" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+    <h1 class="text-center text-5xl text-headingColor font-bold my-10">MY PORTFOLIO</h1>
+
+    <div class="grid grid-cols-1 gap-y-10 my-20 md:grid-cols-2">
+
+      <div class="bg-white flex flex-col space-y-8 w-80 px-12 rounded-2xl mx-auto py-10">
+        <h2 class="text-mainColor text-3xl font-bold">Web Development</h2>
+        <p class="text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Assumenda, incidunt
+          ducimus
+          recusandae vero aperiam
+          beatae dolore. Explicabo placeat cupiditate reprehenderit.</p>
+        <div class="">
+          <a href="#" class="w-32 glow-btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="bg-white flex flex-col space-y-8 w-80 px-12 rounded-2xl mx-auto py-10">
+        <h2 class="text-mainColor text-3xl font-bold">App Development</h2>
+        <p class="text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Assumenda, incidunt
+          ducimus
+          recusandae vero aperiam
+          beatae dolore. Explicabo placeat cupiditate reprehenderit.</p>
+        <div class="">
+          <a href="#" class="w-32 glow-btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="bg-white flex flex-col space-y-8 w-80 px-12 rounded-2xl mx-auto py-10">
+        <h2 class="text-mainColor text-3xl font-bold">Teaching Assisstant in DSA</h2>
+        <p class="text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Assumenda, incidunt
+          ducimus
+          recusandae vero aperiam
+          beatae dolore. Explicabo placeat cupiditate reprehenderit.</p>
+        <div class="">
+          <a href="#" class="w-32 glow-btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="bg-white flex flex-col space-y-8 w-80 px-12 rounded-2xl mx-auto py-10">
+        <h2 class="text-mainColor text-3xl font-bold">Others</h2>
+        <p class="text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Assumenda, incidunt
+          ducimus
+          recusandae vero aperiam
+          beatae dolore. Explicabo placeat cupiditate reprehenderit.</p>
+        <div class="">
+          <a href="#" class="w-32 glow-btn">Read More</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ------------------------------------------------------------- -->
+  <!-- REVIEWS -->
+  <!-- ------------------------------------------------------------- -->
+
+
+  <section id="reviews" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+    <h1 class="text-center text-5xl text-headingColor font-bold mt-10">TOP REVIEWS</h1>
+
+    <div class="swiper mySwiper py-14">
+      <div class="swiper-wrapper relative">
+
+        <div class="swiper-slide">
+
+          <div class="flex flex-col space-y-3 items-center">
+            <i class="fa-solid fa-quote-right text-mainColor text-4xl"></i>
+            <p class="text-sm text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, reprehenderit cupiditate commodi
+              aliquid non
+              temporibus architecto itaque nihil a laborum corrupti omnis, ipsa
+            </p>
+            <h3 class="text-center text-mainColor">Swagata Mukherjee</h3>
+            <p>From India</p>
+            <figure class="w-10">
+              <img src="images/vivek.jpg" alt="" class="rounded-full border-2 border-red-500">
+            </figure>
+          </div>
+
+        </div>
+
+
+        <div class="swiper-slide">
+
+          <div class="flex flex-col space-y-3 items-center">
+            <i class="fa-solid fa-quote-right text-mainColor text-4xl"></i>
+            <p class="text-sm text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, reprehenderit cupiditate commodi
+              aliquid non
+              temporibus architecto itaque nihil a laborum corrupti omnis, ipsa
+            </p>
+            <h3 class="text-center text-mainColor">Vivek Adhikary</h3>
+            <p>From India</p>
+            <figure class="w-10">
+              <img src="images/vivek.jpg" alt="" class="rounded-full border-2 border-red-500">
+            </figure>
+          </div>
+
+        </div>
+
+
+        <div class="swiper-slide">
+
+          <div class="flex flex-col space-y-3 items-center">
+            <i class="fa-solid fa-quote-right text-mainColor text-4xl"></i>
+            <p class="text-sm text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, reprehenderit cupiditate commodi
+              aliquid non
+              temporibus architecto itaque nihil a laborum corrupti omnis, ipsa
+            </p>
+            <h3 class="text-center text-mainColor">Argha Sinha Roy</h3>
+            <p>From India</p>
+            <figure class="w-10">
+              <img src="images/vivek.jpg" alt="" class="rounded-full border-2 border-red-500">
+            </figure>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </section>
+
+
+  <!-- ------------------------------------------------------------- -->
+  <!-- CONTACT -->
+  <!-- ------------------------------------------------------------- -->
+
+  <section id="contact" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+    <h1 class="text-center text-5xl text-headingColor font-bold my-10">CONTACT ME</h1>
+    <h3 class="text-center text-sm mb-3">This is form is only for <span class="text-red-400">feedback</span> of the
+      website,
+      <span class="text-yellow-300"> features</span>
+      that can be added and
+      things that
+      can be <span class="text-green-400">improved</span>
+    </h3>
+    <!-- https://formsubmit.co/swiggy444444@gmail.com   method="POST" -->
+    <form action="https://formsubmit.co/swiggy444444@gmail.com" method="POST"
+      class="flex flex-col space-y-5 items-start lg:px-28">
+
+      <input type="text" id="name" name="name" placeholder="Your Name*"
+        class="w-full rounded-xl px-5 py-4 text-sm focus:outline-none"
+        style="background-color: rgba(163, 160, 160, 0.1);" required>
+
+      <input type="email" id="email" name="email" placeholder="Your E-mail address(Optional)"
+        class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none"
+        style="background-color: rgba(163, 160, 160, 0.1);">
+
+      <input type="number" id="number" name="number" placeholder="Your mobile number(Optional)"
+        class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none"
+        style="background-color: rgba(163, 160, 160, 0.1);">
+
+      <textarea id="message" name="message" cols="30" rows="10" placeholder="Write a message to me \n\n 
+      1. Things which you like of the website \n
+      2. Features that can be added more \n
+      3. Improvements to be made" class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none"
+        style="background-color: rgba(163, 160, 160, 0.1);" required></textarea>
+
+      <input id="submit" type="submit" value="Submit" class="glow-btn cursor-pointer">
+    </form>
+
+
+  </section>
+
+  <footer id="footer" class="flex flex-col">
+    <div class="flex flex-row justify-center space-x-4 py-2">
+      <a href="https://www.facebook.com/profile.php?id=100027520621727" target="_blank"><i
+          class="fa-brands fa-facebook-f glow-icon px-4"></i></a>
+      <a href="https://www.instagram.com/sayan_banerjee____/" target="_blank"><i
+          class="fa-brands fa-instagram glow-icon"></i></a>
+      <a href="https://www.linkedin.com/in/sayan-banerjee-77603a23b/" target="_blank"><i
+          class="fa-brands fa-linkedin-in glow-icon"></i></a>
+      <a href="https://github.com/Sayan4444" target="_blank"><i class="fa-brands fa-github glow-icon "></i></a>
+    </div>
+
+    <div class="flex flex-row justify-center space-x-4">
+      <a href="#" class="hover:text-mainColor transition-all duration-500 text-sm">Privacy Policy</a>
+      <a href="#" class="hover:text-mainColor transition-all duration-500 text-sm">Terms of use</a>
+      <a href="#" class="hover:text-mainColor transition-all duration-500 text-sm">Disclaimer</a>
+    </div>
+    <div>
+
+      <p class="text-sm text-center">Created by <span class="text-base">SAYAN BANERJEE</span> | 2022 All Rights
+        reserved</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</body>
+
+</html>

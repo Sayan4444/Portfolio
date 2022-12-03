@@ -182,7 +182,6 @@ number.classList.remove('input-invalid');
 number.classList.remove('input-valid');
 
 number.addEventListener('paste', event => event.preventDefault());
-email.addEventListener('paste', event => event.preventDefault());
 
 
 email.addEventListener('keydown', (event) => {
@@ -224,6 +223,7 @@ email.addEventListener('keydown', (event) => {
             submit.classList.add('cursor-pointer');
             submit.disabled = false;
         }
+       
 
     }, 10);
 });
@@ -231,6 +231,7 @@ email.addEventListener('keydown', (event) => {
 email.classList.remove('input-invalid');
 email.classList.remove('input-valid');
 
+email.addEventListener('paste', event => event.preventDefault());
 
 
 

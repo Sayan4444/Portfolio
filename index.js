@@ -181,6 +181,8 @@ number.addEventListener('keydown', (event) => {
 number.classList.remove('input-invalid');
 number.classList.remove('input-valid');
 
+number.addEventListener('paste', event => event.preventDefault());
+
 
 email.addEventListener('keydown', (event) => {
     let value;

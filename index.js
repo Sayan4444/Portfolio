@@ -175,7 +175,7 @@ number.addEventListener('keydown', (event) => {
             submit.disabled = false;
         }
 
-    }, 1);
+    }, 0);
 });
 
 number.classList.remove('input-invalid');

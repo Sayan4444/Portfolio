@@ -17,7 +17,7 @@
 
   <link rel="stylesheet" href="css/style.css" />
 
-  <script defer src="index.js"></script>
+
   <title>My Project</title>
 </head>
 
@@ -302,36 +302,51 @@
 
   <section id="contact" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
     <h1 class="text-center text-5xl text-headingColor font-bold my-10">CONTACT ME</h1>
-    <h3 class="text-center text-sm mb-3">This is form is only for <span class="text-red-400">feedback</span> of the
+    <!-- <h3 class="text-center text-sm mb-3">This is form is only for <span class="text-red-400">feedback</span> of the
       website,
       <span class="text-yellow-300"> features</span>
       that can be added and
       things that
       can be <span class="text-green-400">improved</span>
-    </h3>
+    </h3> -->
 
+    <h3 class="mb-4">Write in the message section:- <br> <br><span class="text-red-400 pl-4">1. Things which you like of
+        the website
+        <br>
+      </span>
+      <span class="text-green-400 pl-4">2. Features that can be added more <br> </span>
+      <span class="text-yellow-400 pl-4">3. Improvements to be made</span>
+    </h3>
+    <!-- https://formsubmit.co/cd3c21ffa19099afedb0a5b14d6694a7   method="POST" -->
     <form action="https://formsubmit.co/cd3c21ffa19099afedb0a5b14d6694a7" method="POST"
-      class="flex flex-col space-y-5 items-start lg:px-28">
+      class="flex flex-col space-y-5 items-start lg:px-28" autocomplete="off">
 
       <input type="text" id="name" name="name" placeholder="Your Name*"
-        class="w-full rounded-xl px-5 py-4 text-sm focus:outline-none"
-        style="background-color: rgba(163, 160, 160, 0.1);" required>
+        class="w-full rounded-xl px-5 py-4 text-sm focus:outline-none bg-formBg autofill:bg-black" required>
 
-      <input type="email" id="email" name="email" placeholder="Your E-mail address(Optional)"
-        class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none"
-        style="background-color: rgba(163, 160, 160, 0.1);">
+      <div class="w-full relative">
+        <input type="email" id="email" name="email" placeholder="Your E-mail address(Optional)"
+          class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none bg-formBg">
+        <figure>
+          <img src="" alt="" class="w-8 absolute right-4 top-3 email-pic">
+        </figure>
+      </div>
 
-      <input type="number" id="number" name="number" placeholder="Your mobile number(Optional)"
-        class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none"
-        style="background-color: rgba(163, 160, 160, 0.1);">
 
-      <textarea id="message" name="message" cols="30" rows="10" placeholder="Write a message to me \n\n 
-      1. Things which you like of the website \n
-      2. Features that can be added more \n
-      3. Improvements to be made" class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none"
-        style="background-color: rgba(163, 160, 160, 0.1);" required></textarea>
+      <div class="w-full relative">
+        <input type="number" id="number" name="number" placeholder="Your mobile number(Optional)"
+          class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none bg-formBg" maxlength="10">
+        <figure>
+          <img src="" alt="" class="w-8 absolute right-4 top-3 number-pic">
+        </figure>
+      </div>
 
-      <input id="submit" type="submit" value="Submit" class="glow-btn cursor-pointer">
+
+
+      <textarea id="message" name="message" cols="30" rows="10" placeholder="Message"
+        class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none bg-formBg" required></textarea>
+
+      <input id="submit" type="submit" value="Submit" class="glow-submit-btn cursor-not-allowed">
     </form>
 
 
@@ -363,6 +378,9 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+  <script src="index.js"></script>
 
 </body>
 

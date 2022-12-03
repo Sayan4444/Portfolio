@@ -135,6 +135,7 @@ let clsHover = window.getComputedStyle(cls, ":hover");
 // })
 
 number.addEventListener('keydown', (event) => {
+
     let value;
     const timer = setTimeout(() => {
         value = number.value;
@@ -149,11 +150,17 @@ number.addEventListener('keydown', (event) => {
             number.classList.add('input-valid');
             numberPic.src = "images/valid.png";
         }
-        else if ((value.length > 0 && value.length < 10) || (value.length > 10)) {
+        else if ((value.length > 0 && value.length < 10)) {
 
             number.classList.remove('input-valid');
             number.classList.add('input-invalid');
             numberPic.src = "images/invalid.png";
+        }
+
+        else if (value.length > 10) {
+            number.value = value.slice(0, 10);
+            value = value.slice(0, 11);
+            timer();
         }
 
 
@@ -168,7 +175,7 @@ number.addEventListener('keydown', (event) => {
             submit.disabled = false;
         }
 
-    }, 10);
+    }, 0);
 });
 
 number.classList.remove('input-invalid');
@@ -221,6 +228,7 @@ email.addEventListener('keydown', (event) => {
 email.classList.remove('input-invalid');
 email.classList.remove('input-valid');
 
-// Submit button
+
+
 
 

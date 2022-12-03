@@ -159,7 +159,7 @@ number.addEventListener('keydown', (event) => {
 
         else if (value.length > 10) {
             number.value = value.slice(0, 10);
-            value = value.slice(0, 11);
+            value = value.slice(0, 10);
             timer();
         }
 
@@ -175,7 +175,7 @@ number.addEventListener('keydown', (event) => {
             submit.disabled = false;
         }
 
-    }, 0);
+    }, 1);
 });
 
 number.classList.remove('input-invalid');

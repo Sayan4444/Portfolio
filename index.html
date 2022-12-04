@@ -327,8 +327,8 @@
         class="w-full rounded-xl px-5 py-4 text-sm focus:outline-none bg-formBg autofill:bg-black" required>
 
       <div class="w-full relative">
-        <input type="email" id="email" name="email" placeholder="Your E-mail address(Optional)"
-          class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none bg-formBg">
+        <input type="email" id="email" name="email" placeholder="Your E-mail address*"
+          class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none bg-formBg" required>
         <figure>
           <img src="" alt="" class="w-8 absolute right-4 top-3 email-pic">
         </figure>
@@ -336,8 +336,8 @@
 
 
       <div class="w-full relative">
-        <input type="number" id="number" name="number" placeholder="Your mobile number(Optional)"
-          class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none bg-formBg" maxlength="10">
+        <input type="number" id="number" name="number" placeholder="Your mobile number"
+          class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none bg-formBg" maxlength="10" required>
         <figure>
           <img src="" alt="" class="w-8 absolute right-4 top-3 number-pic">
         </figure>
@@ -346,9 +346,9 @@
 
 
       <textarea id="message" name="message" cols="30" rows="10" placeholder="Message"
-        class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none bg-formBg" required></textarea>
+        class="w-full rounded-xl text-sm px-5 py-4 focus:outline-none bg-formBg"></textarea>
 
-      <input id="submit" type="submit" value="Submit" class="glow-submit-btn cursor-not-allowed">
+      <input id="submit" type="submit" value="Submit" class="glow-submit-btn cursor-not-allowed" disabled>
     </form>
 
 

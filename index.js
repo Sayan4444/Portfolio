@@ -134,6 +134,26 @@ let clsHover = window.getComputedStyle(cls, ":hover");
 //     email.value = "";
 // })
 
+const checkSubmit = () => {
+    if ((number.classList.contains('input-invalid')) || (email.classList.contains('input-invalid')) || name1.value.length === 0) {
+        submit.classList.remove('cursor-pointer');
+        submit.classList.add('cursor-not-allowed');
+        submit.disabled = true;
+    }
+    else if (number.classList.contains('input-valid') && email.classList.contains('input-valid') && name1.value.length !== 0) {
+        submit.classList.remove('cursor-not-allowed');
+        submit.classList.add('cursor-pointer');
+        submit.disabled = false;
+    }
+
+    else if (email.value.length === 0 || number.value.length === 0 || name1.value.length === 0) {
+        submit.classList.remove('cursor-pointer');
+        submit.classList.add('cursor-not-allowed');
+        submit.disabled = true;
+    }
+}
+
+
 number.addEventListener('keydown', (event) => {
 
     let value;
@@ -166,24 +186,9 @@ number.addEventListener('keydown', (event) => {
         // disbaling submit button
 
 
-        if ((number.classList.contains('input-invalid')) || (email.classList.contains('input-invalid'))) {
-            submit.classList.remove('cursor-pointer');
-            submit.classList.add('cursor-not-allowed');
-            submit.disabled = true;
-        }
-        else if ((number.classList.contains('input-valid')) && (email.classList.contains('input-valid'))) {
-            submit.classList.remove('cursor-not-allowed');
-            submit.classList.add('cursor-pointer');
-            submit.disabled = false;
-        }
+        checkSubmit();
 
-        else if (email.value.length === 0 && number.value.length === 0) {
-            submit.classList.remove('cursor-pointer');
-            submit.classList.add('cursor-not-allowed');
-            submit.disabled = true;
-        }
-
-    }, 0);
+    }, 10);
 });
 
 number.classList.remove('input-invalid');
@@ -192,6 +197,11 @@ number.classList.remove('input-valid');
 number.addEventListener('paste', event => event.preventDefault());
 email.addEventListener('paste', event => event.preventDefault());
 
+
+
+name1.addEventListener('keydown', () => {
+    const timer = setTimeout(checkSubmit, 10);
+})
 
 email.addEventListener('keydown', (event) => {
     let value;
@@ -222,22 +232,7 @@ email.addEventListener('keydown', (event) => {
             }
         }
 
-        if ((number.classList.contains('input-invalid')) || (email.classList.contains('input-invalid'))) {
-            submit.classList.remove('cursor-pointer');
-            submit.classList.add('cursor-not-allowed');
-            submit.disabled = true;
-        }
-        else if ((number.classList.contains('input-valid')) && (email.classList.contains('input-valid'))) {
-            submit.classList.remove('cursor-not-allowed');
-            submit.classList.add('cursor-pointer');
-            submit.disabled = false;
-        }
-
-        else if (email.value.length === 0 && number.value.length === 0) {
-            submit.classList.remove('cursor-pointer');
-            submit.classList.add('cursor-not-allowed');
-            submit.disabled = true;
-        }
+        checkSubmit();
 
     }, 10);
 });

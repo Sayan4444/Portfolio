@@ -112,7 +112,7 @@ const reviewSection = () => {
 reviewSection();
 
 
-//Clearing form on submit
+//Form section
 
 const name1 = document.querySelector('#name');
 const email = document.querySelector('#email');
@@ -163,16 +163,24 @@ number.addEventListener('keydown', (event) => {
             timer();
         }
 
+        // disbaling submit button
+
 
         if ((number.classList.contains('input-invalid')) || (email.classList.contains('input-invalid'))) {
             submit.classList.remove('cursor-pointer');
             submit.classList.add('cursor-not-allowed');
             submit.disabled = true;
         }
-        else {
+        else if ((number.classList.contains('input-valid')) && (email.classList.contains('input-valid'))) {
             submit.classList.remove('cursor-not-allowed');
             submit.classList.add('cursor-pointer');
             submit.disabled = false;
+        }
+
+        else if (email.value.length === 0 && number.value.length === 0) {
+            submit.classList.remove('cursor-pointer');
+            submit.classList.add('cursor-not-allowed');
+            submit.disabled = true;
         }
 
     }, 0);
@@ -182,6 +190,7 @@ number.classList.remove('input-invalid');
 number.classList.remove('input-valid');
 
 number.addEventListener('paste', event => event.preventDefault());
+email.addEventListener('paste', event => event.preventDefault());
 
 
 email.addEventListener('keydown', (event) => {
@@ -214,25 +223,24 @@ email.addEventListener('keydown', (event) => {
         }
 
         if ((number.classList.contains('input-invalid')) || (email.classList.contains('input-invalid'))) {
-            submit.classList.add('cursor-not-allowed');
             submit.classList.remove('cursor-pointer');
+            submit.classList.add('cursor-not-allowed');
             submit.disabled = true;
         }
-        else {
+        else if ((number.classList.contains('input-valid')) && (email.classList.contains('input-valid'))) {
             submit.classList.remove('cursor-not-allowed');
             submit.classList.add('cursor-pointer');
             submit.disabled = false;
         }
-       
+
+        else if (email.value.length === 0 && number.value.length === 0) {
+            submit.classList.remove('cursor-pointer');
+            submit.classList.add('cursor-not-allowed');
+            submit.disabled = true;
+        }
 
     }, 10);
 });
 
 email.classList.remove('input-invalid');
 email.classList.remove('input-valid');
-
-email.addEventListener('paste', event => event.preventDefault());
-
-
-
-
